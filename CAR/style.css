@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+* {
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    min-height: 100vh;
+    background: url(bg2.jpg);
+    background-size: 3500px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 50% 50%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #5d697c;
+    font-family: 'Trocchi', serif;
+    font-size: 4rem;
+    font-weight: normal;
+    line-height: 48px;
+    margin: 0;
+}
+
+main.table {
+    position: relative;
+    width: fit-content;
+    background: rgba(170, 170, 170, 0);
+    border-radius: 50px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.185);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    overflow: hidden;
+    padding: 20px;
+    margin: 0 15%;
+}
+
+.table_header {
+    position: relative;
+    width: fit-content;
+    height: 7rem;
+    padding: 2rem 1rem;
+    border-radius: 15rem;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+    /* background: rgba(255, 255, 255, 0.11);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.404);
+    backdrop-filter: blur(9.2px);
+    -webkit-backdrop-filter: blur(9.2px);*/
+
+}
+
+h1 {
+    margin: auto;
+    line-height: 100%;
+    vertical-align: middle;
+}
+
+.table_body {
+    width: 95%;
+    max-height: calc(89% - 1.6rem);
+    background-color: rgba(255, 255, 255, 0);
+    margin: .8rem auto;
+    border-radius: .6rem;
+    align-items: center;
+}
+
+.table_body::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.table_body::-webkit-scrollbar-thumb {
+    border-radius: .5rem;
+    background-color: rgba(0, 0, 0, 0.103);
+    visibility: hidden;
+}
+
+.table_body:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    width: 50%;
+}
+
+td img {
+    width: 100%;
+    margin: .1rem;
+    border-radius: 1rem;
+    vertical-align: middle;
+}
+
+.logoimg {
+    height: 3rem;
+}
+
+.toyo {
+    height: 1.2rem;
+}
+
+.kon {
+    height: 4rem;
+}
+
+.mc {
+    height: 1.2rem;
+}
+
+table,
+th,
+td {
+    padding: 0 1rem;
+    border-collapse: collapse;
+}
+
+td {
+    padding-bottom: 2rem;
+}
+
+thead th {
+    position: static;
+    top: 0;
+    left: 0;
+    background-color: #d5d1de00;
+}
+
+.button {
+    padding: 0 .4rem;
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0.123);
+    border-radius: 20px;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.329);
+}
+
+/* Hyperlink CSS*/
+.link {
+    height: 30px;
+    align-items: center;
+    color: #000;
+    text-decoration: none;
+    display: flex;
+}
+
+.mask {
+    position: relative;
+    padding: 0;
+    height: 20px;
+
+    overflow: hidden;
+}
+
+.link-container {
+    transition: transform 0.4s ease;
+}
+
+.title {
+    display: block;
+
+    line-height: 20px;
+
+    transition: transform 0.4s ease;
+}
+
+.link-title1 {
+    transform-origin: right center;
+}
+
+.link-title2 {
+    transform-origin: left center;
+    transform: rotate(20deg);
+}
+
+.link-icon {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+
+    overflow: hidden;
+}
+
+.icon {
+    display: block;
+    position: absolute;
+    transition: transform 0.4s ease;
+}
+
+.icon:nth-child(2) {
+    transform: translate(-40px);
+}
+
+.link:hover .link-container {
+    transform: translateY(-20px);
+}
+
+/* Rotate texts a little bit */
+.link:hover .link-title1 {
+    transform: rotate(20deg);
+}
+
+.link:hover .link-title2 {
+    transform: rotate(0);
+}
+
+.link:hover .icon:first-child {
+    transform: translate(40px);
+}
+
+.link:hover .icon:nth-child(2) {
+    transform: translate(0px);
+}
+
+/* End of Hyperlink CSS*/
+
+/*@media (max-width:1000px) {
+    td {
+        min-width: 12.1rem;
+    }
+
+    thead th {
+        position: relative;
+    }
+}
